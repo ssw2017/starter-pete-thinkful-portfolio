@@ -1,6 +1,32 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+
+
+/* CSS for About section */
+.about-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.about-image {
+  margin-right: 20px; /* Add space between image and content */
+}
+
+.about-content {
+  text-align: left; /* Left align the content */
+}
+
+.about-content h3 {
+  text-align: center; /* Center the heading */
+}
+
+/* CSS for container */
+.container {
+  max-width: calc(100% - 400px); /* 200px space on each side */
+  margin: 0 auto;
+}
+
 body {
   background-color: #eae2b7;
   color: #003049;
@@ -16,9 +42,10 @@ h3 {
   text-align: center;
 }
 
+
 /* Header */
 header {
-  text-align: center;
+  text-align: right;
 }
 
 /* Containers */
@@ -75,4 +102,35 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+
+
+/* CSS for portfolio section */
+#portfolio {
+  margin: 40px 0;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.portfolio-item {
+  flex: 1;
+  text-align: center;
+}
+
+.portfolio-item h3 {
+  margin-top: 0;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item p {
+  font-size: 14px; /* Change the font size of project descriptions */
 }
